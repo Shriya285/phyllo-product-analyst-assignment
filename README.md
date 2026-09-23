@@ -52,7 +52,7 @@
 
 - Impact: a caller trusting `has_more` silently loses a third of the data
 
-### 6. 404 returns 200
+### 6. Missing order returns 200 instead of 404
 
 **Docs claim:** `GET /v1/orders/{id}` "returns 404 if no order with that ID exists"
 
@@ -75,7 +75,8 @@ Sum: 5470 + 2381 + 7310 + 2547 + 5362 = 23,070 cents = **$230.70**
 
 Verified with `script.py` (run from inside `candidate-pack/`).
 
-## Task 3: Email to Priya
+## Task 3: 
+### Email to Priya
 
 Hi Priya,
 
@@ -87,10 +88,10 @@ Second, one order's amount was recorded in dollars instead of cents, undercounti
 
 Correcting both, the numbers reconcile. Both are logged as bugs on our end, so happy to walk through the figures together if useful.
 
-Best Regards,
+Best Regards,<br>
 Shriya Konduru
 
-## Task 4: Bug report
+### Bug report
 
 **Bug:** `GET /v1/orders/{id}` returns 200 instead of 404 for a nonexistent order
 
