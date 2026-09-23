@@ -73,6 +73,8 @@
 
 Sum: 5470 + 2381 + 7310 + 2547 + 5362 = 23,070 cents = **$230.70**
 
+Verified with `script.py` (run from inside `candidate-pack/`).
+
 ## Task 3: Email to Priya
 
 Hi Priya,
