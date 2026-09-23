@@ -96,7 +96,7 @@ Shriya Konduru
 **Bug:** `GET /v1/orders/{id}` returns 200 instead of 404 for a nonexistent order
 
 **What to look at:**
-The order-lookup endpoint, `GET /v1/orders/{id}`, specifically the path handling a missing/nonexistent order ID.
+`GET /v1/orders/{id}`, specifically the path handling a missing/nonexistent order ID.
 
 **What happens:**
 Requesting an order ID that doesn't exist (e.g. `ord_9999`) returns HTTP status 200, with the response body `{"order": null}`. Per the documentation, this case is supposed to return a 404.
