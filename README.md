@@ -61,7 +61,7 @@
 ## Worst finding: the wrong HTTP status (#6)
 
 - `ord_9999` doesn't exist. Docs say this should return 404; it actually returned 200 with a null order.
-- Every other finding produces a value visible on inspecting the data. This one breaks the mechanism callers use to trust a response at all: status codes exist so bodies don't need manual inspection.
+- Every other finding produces a value visible on inspection. This one breaks the mechanism callers use to trust a response at all.
 - Code checking `status == 404` never triggers here, since status is 200. It treats the null order as success and either crashes or proceeds with invalid data.
 
 ## Task 2: Total revenue: $230.70
