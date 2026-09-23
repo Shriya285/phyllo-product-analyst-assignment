@@ -73,9 +73,7 @@
 
 Sum: 5470 + 2381 + 7310 + 2547 + 5362 = 23,070 cents = **$230.70**
 
-## Task 3
-
-### Email to Priya
+## Task 3: Email to Priya
 
 Hi Priya,
 
@@ -90,7 +88,7 @@ Correcting both, the numbers reconcile. Both are logged as bugs on our end, so h
 Best Regards,
 Shriya Konduru
 
-### Bug report
+## Task 4: Bug report
 
 **Bug:** `GET /v1/orders/{id}` returns 200 instead of 404 for a nonexistent order
 
